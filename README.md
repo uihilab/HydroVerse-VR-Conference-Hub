@@ -28,18 +28,18 @@ The system addresses the limitations of traditional and virtual conferences by o
 
 ## Key Features
 
-* [cite_start]**Immersive 3D Environment:** A fully navigable conference hall built in **Unreal Engine 5** using Lumen and Nanite for high-fidelity rendering.
-* [cite_start]**Interactive Metahuman AI:** Users interact with AI-driven avatars that deliver voice-over summaries and answer questions in real-time using **OpenAI** and **NVIDIA ACE**.
-* [cite_start]**Voice-Driven Q&A:** Supports natural language voice interaction, converting user speech to text and synthesizing AI responses with synchronized lip movements.
-* [cite_start]**Digital Twin Exploration:** Users can manipulate high-fidelity 3D models of research artifacts (e.g., sensors) to understand form-function relationships.
-* [cite_start]**Research Bridge Live:** Seamless integration of video conferencing allows users to transition from AI interaction to live video calls with researchers.
-* [cite_start]**Web-Based Discovery:** A decoupled web interface for efficient poster filtering, search, and content management.
+* **Immersive 3D Environment:** A fully navigable conference hall built in **Unreal Engine 5** using Lumen and Nanite for high-fidelity rendering.
+* **Interactive Metahuman AI:** Users interact with AI-driven avatars that deliver voice-over summaries and answer questions in real-time using **OpenAI** and **NVIDIA ACE**.
+* **Voice-Driven Q&A:** Supports natural language voice interaction, converting user speech to text and synthesizing AI responses with synchronized lip movements.
+* **Digital Twin Exploration:** Users can manipulate high-fidelity 3D models of research artifacts (e.g., sensors) to understand form-function relationships.
+* **Research Bridge Live:** Seamless integration of video conferencing allows users to transition from AI interaction to live video calls with researchers.
+* **Web-Based Discovery:** A decoupled web interface for efficient poster filtering, search, and content management.
 
 ---
 
 ## System Architecture
 
-[cite_start]The architecture consists of four interconnected modules: the Virtual Environment (Unreal Engine), the OpenAI Generative AI Pipeline, the Metahuman AI Integration (ACE), and the Web-Based Poster Information System.
+The architecture consists of four interconnected modules: the Virtual Environment (Unreal Engine), the OpenAI Generative AI Pipeline, the Metahuman AI Integration (ACE), and the Web-Based Poster Information System.
 
 <p align="center">
   <img src="./docs/Figure2_Architecture.png" width="800" title="System Architecture">
@@ -58,7 +58,7 @@ The system addresses the limitations of traditional and virtual conferences by o
 
 ### Hardware Requirements
 * **VR Headset:** Meta Quest 3 (Recommended) via Link/AirLink.
-* [cite_start]**PC Specifications:** High-performance PC (e.g., Intel Core i9, NVIDIA RTX 4080) recommended for real-time rendering.
+* **PC Specifications:** High-performance PC (e.g., Intel Core i9, NVIDIA RTX 4080) recommended for real-time rendering.
 
 ### Software Prerequisites
 * [Unreal Engine 5.3](https://www.unrealengine.com/)
@@ -107,7 +107,7 @@ The system addresses the limitations of traditional and virtual conferences by o
 ## Modules & Usage
 
 ### 1. Conference Hall & Poster Discovery
-[cite_start]Users enter the main hall and use the **Poster Discovery Interface** to filter research by category, presenter, or subject without needing keyboard input.
+Users enter the main hall and use the **Poster Discovery Interface** to filter research by category, presenter, or subject without needing keyboard input.
 
 <p align="center">
   <img src="./docs/Figure3_PosterDiscovery.png" width="800" title="Poster Discovery Interface">
@@ -116,7 +116,7 @@ The system addresses the limitations of traditional and virtual conferences by o
 </p>
 
 ### 2. AI-Driven Presentation & Q&A
-Upon selecting a poster, a Metahuman avatar delivers an automated summary. Users can press the microphone button on the controller to ask questions. [cite_start]The system captures speech, queries the full-text paper via OpenAI, and the avatar responds verbally with synchronized lip-sync.
+Upon selecting a poster, a Metahuman avatar delivers an automated summary. Users can press the microphone button on the controller to ask questions. The system captures speech, queries the full-text paper via OpenAI, and the avatar responds verbally with synchronized lip-sync.
 
 <p align="center">
   <img src="./docs/Figure9_QA.png" width="600" title="Metahuman Interaction">
@@ -125,7 +125,7 @@ Upon selecting a poster, a Metahuman avatar delivers an automated summary. Users
 </p>
 
 ### 3. Digital Twin Exploration
-For applicable research, users can view detailed 3D models (Digital Twins) of equipment (e.g., sensors). [cite_start]These objects can be rotated and inspected while the AI explains specific components.
+For applicable research, users can view detailed 3D models (Digital Twins) of equipment (e.g., sensors). These objects can be rotated and inspected while the AI explains specific components.
 
 <p align="center">
   <img src="./docs/Figure7_DigitalTwin.png" width="600" title="Digital Twin Exploration">
@@ -134,7 +134,7 @@ For applicable research, users can view detailed 3D models (Digital Twins) of eq
 </p>
 
 ### 4. Research Bridge Live
-[cite_start]If a deeper discussion is needed, users can join a scheduled live video call with the author directly inside the VR environment.
+If a deeper discussion is needed, users can join a scheduled live video call with the author directly inside the VR environment.
 
 <p align="center">
   <img src="./docs/Figure12_VideoConf.png" width="600" title="Research Bridge Live">
@@ -154,7 +154,7 @@ For applicable research, users can view detailed 3D models (Digital Twins) of eq
 
 ## Funding & Acknowledgements
 
-[cite_start]This project was funded by the **National Oceanic and Atmospheric Administration (NOAA)** via the Cooperative Institute for Research to Operations in Hydrology (CIROH).
+This project was funded by the **National Oceanic and Atmospheric Administration (NOAA)** via the Cooperative Institute for Research to Operations in Hydrology (CIROH).
 
 ---
 
