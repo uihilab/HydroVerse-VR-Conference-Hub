@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flood Monitoring: Iowa Flood Center</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background: #f5faff; font-family: 'Segoe UI', sans-serif; }
+    .section { display: none; min-height: 70vh; padding: 2rem; background: white; border-radius: 1rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 2rem auto; max-width: 1000px; }
+    .section.active { display: block; }
+    .section img { width: 100%; height: auto; max-height: 500px; object-fit: contain; border-radius: 0.5rem; }
+    .section iframe { width: 100%; height: 500px; border-radius: 0.5rem; }
+    .nav-buttons { text-align: center; margin: 2rem 0; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="text-center text-primary fw-bold mt-4">Flood Monitoring: Iowa Flood Center</h1>
+
+    <!-- Section 1: Overview -->
+    <div class="section active" id="section-1">
+      <h3>Overview of Flood Monitoring Services</h3>
+      <img src="Flood Monitoring.jpg" alt="Flood Monitoring Overview">
+      <p class="mt-3">The Iowa Flood Center (IFC) provides Iowans with accurate, real-time flood conditions and forecasts using advanced hydrologic modeling and sensor networks.</p>
+    </div>
+
+    <!-- Section 2: Stream Sensors -->
+    <div class="section" id="section-2">
+      <h3>Stream Sensors</h3>
+      <img src="Stream Sensor Description.png" alt="Stream Sensor">
+      <p>The IFC’s network of over 250 stream sensors provides real-time water level information for Iowa’s rivers and streams, supporting public awareness and emergency planning.</p>
+    </div>
+
+    <!-- Section 3: Hydrostation Deployment -->
+    <div class="section" id="section-3">
+      <h3>Hydrostation Deployment</h3>
+      <img src="hydrostation deployment.jpg" alt="Bridge Sensor">
+      <p>Bridge-mounted stream sensors installed across Iowa collect high-frequency water level data, providing critical input to flood models and early warning systems.</p>
+    </div>   
+
+    <!-- Section 4: Interactive Maps -->
+    <div class="section" id="section-4">
+      <h3>Hydrologic Monitoring Network</h3>
+      <img src="Hydrologic Monitoring Network.jpg" alt="Interactive Flood Map">
+      <p>The IFC’s online mapping tools provide dynamic visualization of current conditions, forecasts, inundation scenarios, and sensor locations for the public and professionals.</p>
+    </div>
+	<!-- Section 5: Video -->
+	<div class="section" id="section-4">
+	  <h3>Water Splatters</h3>
+	  <video controls autoplay muted loop style="width: 100%; max-height: 500px; border-radius: 0.5rem;">
+		<source src="http://localhost:8000/water.webm" type="video/mp4">
+	  </video>
+	  
+	  <p class="mt-3">In this page you can see the water splatter Video from the web source</p>
+	</div>
+	
+	
+
+    <!-- Pagination Controls -->
+    <div class="nav-buttons">
+	  <a href="index.html" class="btn btn-outline-secondary">🏠 Home</a>
+      <button class="btn btn-secondary" onclick="prevSection()">⬅ Previous</button>
+      <button class="btn btn-primary" onclick="nextSection()">Next ➡</button>
+    </div>
+  </div>
+
+  <script>
+    let current = 1;
+    const total = 5;
+
+    function showSection(index) {
+      document.querySelectorAll('.section').forEach((sec, i) => {
+        sec.classList.toggle('active', i === index - 1);
+      });
+    }
+
+    function nextSection() {
+      if (current < total) current++;
+      showSection(current);
+    }
+
+    function prevSection() {
+      if (current > 1) current--;
+      showSection(current);
+    }
+  </script>
+</body>
+</html>

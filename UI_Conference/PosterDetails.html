@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poster Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="PosterDetails.css" />
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <!-- Header -->
+    <div class="text-center p-4 border-bottom bg-white">
+      <h1 class="text-primary fw-bold">Poster Details</h1>
+      <a href="index.html" class="btn btn-outline-secondary mt-2">⬅ Back to Posters</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="poster-container">
+      <!-- Poster Image (Primary Focus) -->
+      <div class="poster-image">
+        <img id="posterImage" class="img-fluid w-100 h-100 object-fit-contain" alt="Poster Image" />
+      </div>
+
+      <!-- Poster Info (Secondary) -->
+      <div class="poster-info">
+        <div class="row g-2 px-3 pt-3">
+          <div class="col-md-6">
+            <p><strong class="label">Title:</strong> <span id="title"></span></p>
+            <p><strong class="label">Presenter:</strong> <span id="presenter"></span></p>
+            <p><strong class="label">Subject:</strong> <span id="subject"></span></p>
+          </div>
+          <div class="col-md-6">
+            <p><strong class="label">Lab:</strong> <span id="lab"></span></p>
+            <p><strong class="label">Year:</strong> <span id="year"></span></p>
+            <p><strong class="label">Time:</strong> <span id="time"></span></p>
+          </div>
+          <div class="col-12">
+            <p><strong class="label">Description:</strong> <span id="description"></span></p>
+            <p><strong class="label">Tag:</strong> <span class="badge bg-info text-dark" id="tag"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="PosterDetails.js"></script>
+</body>
+</html>

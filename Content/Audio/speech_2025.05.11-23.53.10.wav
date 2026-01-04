@@ -1,8 +1,0 @@
-{
-  "error": {
-    "message": "[{'type': 'string_too_short', 'loc': ('body', 'input'), 'msg': 'String should have at least 1 character', 'input': '', 'ctx': {'min_length': 1}}]",
-    "type": "invalid_request_error",
-    "param": null,
-    "code": null
-  }
-}
